@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<title>E-Tech</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="Images/Logo_Modified .png">
+<link rel="stylesheet" href="css/Slider.css">
+<link rel="stylesheet" href="css/Main.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+  body{
+    background-image: url(Images/Logo.png);
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+img{
+  width: 100%;
+}
+.special{
+  color: rgb(0, 169, 241);
+}
+#Footer_Div{
+  background-color: white;
+}
+#Slider_Div{
+  width: 50%;
+}
+#Images_Div{
+  max-height: 100px; 
+  width:auto;
+}
+  .mySlides {
+    display: none
+  }
+
+  .w3-left,
+  .w3-right,
+  .w3-badge {
+    cursor: pointer
+  }
+
+  .w3-badge {
+    height: 13px;
+    width: 13px;
+    padding: 0
+  }
+
+  .w3-right,
+  .w3-left,
+  .w3-badge {
+    font-size: 50px;
+  }
+
+  .over-ride:hover {
+    color: red !important;
+  }
+  .max_height{
+    max-height: 1000px ;
+    padding-top: 75px;
+  }
+</style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="index.html" target="_blank"><i class="fa fa-home"></i> Home</a>
+    <a href="login.html" target="_blank"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign in </a>
+    <a href="Contact_Us.html" target="_blank"><i class="fa fa-phone"></i> Contact Us</a>
+    <a href="About_Us.html" target="_blank"><i class="fa fa-address-book" aria-hidden="true"></i> About Us</a>
+    <div class="dropdown">
+      <button class="dropbtn">Dropdown
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <div class="header">
+          <h2>Our Menu</h2>
+        </div>
+        <div class="row">
+          <div class="column">
+            <h3 class="Nav_h3">Personal Computers</h3>
+            <a href="CPUs.html" class="nav-links" target="_blank">CPUs</a>
+            <a href="Monitors.html" class="nav-links" target="_blank"> Monitors</a>
+            <a href="Mouses & Keyboards.html" class="nav-links" target="_blank">Mouses & Keyboards</a>
+          </div>
+          <div class="column">
+            <h3 class="Nav_h3">Mobiles & Laptops</h3>
+            <a href="Mobile Phones.html" class="nav-links" target="_blank">Mobile Phones</a>
+            <a href="Standard Laptops.html" class="nav-links" target="_blank"> Standard Laptops</a>
+            <a href="Gaming Laptops.html" class="nav-links" target="_blank">Gaming Laptops</a>
+          </div>
+           <div class="column" id="Final_Nav_Div">
+            <h3 class="Nav_h3">Accessories</h3>
+            <a href="Headphones & Speakers.html" class="nav-links" target="_blank">Headphones & Speakers</a>
+            <a href="Internal & External Memory Storages.html" class="nav-links" target="_blank">Internal & External Memory Storages</a>
+            <a href="Internal & External Cooling Fans.html" class="nav-links" target="_blank">Internal & External Cooling Fans</a>
+           </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+        
+
+  <marquee width="100%" scrollamount="15" behavior="alternate" id="Marquee">Welcome to E-Tech Website</marquee>
+  
+  <h2 class="special">Browse New Offers</h2>
+
+  <div class="w3-content w3-display-container" id="Images_Div">
+    <img class="mySlides max_height" src="Images/Offers_1.jpeg">
+    <img class="mySlides max_height" src="Images/Offers_2.jpeg">
+    <img class="mySlides max_height" src="Images/Offers_3.jpeg">
+    <img class="mySlides max_height" src="Images/Offers_4.jpeg">
+    <img class="mySlides max_height" src="Images/Offers_5.jpeg">
+    <img class="mySlides max_height" src="Images/Offers_6.jpeg">
+    <img class="mySlides max_height" src="Images/Offers_7.jpeg">
+    <img class="mySlides max_height" src="Images/Offers_8.jpeg">
+    <img class="mySlides max_height" src="Images/Offers_9.jpeg">
+    <img class="mySlides max_height" src="Images/Offers_10.jpeg">
+    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle " id="Slider_Div">
+      <div class="w3-left w3-hover-text-khaki over-ride" ondblclick="plusDivs(-2)">&#8606;</div>
+      <div class="w3-right w3-hover-text-khaki over-ride" ondblclick="plusDivs(2)">&#8608;</div>
+      <br>
+      <div class="w3-right w3-hover-text-khaki over-ride" onclick="plusDivs(1)">&#8620;</div>
+      <div class="w3-left w3-hover-text-khaki over-ride" onclick="plusDivs(-1)">&#8619;</div>
+
+      <span class="w3-badge demo w3-border w3-hover-aqua" onclick="currentDiv(1)"></span>
+      <span class="w3-badge demo w3-border w3-hover-aqua" onclick="currentDiv(2)"></span>
+      <span class="w3-badge demo w3-border w3-hover-aqua" onclick="currentDiv(3)"></span>
+      <span class="w3-badge demo w3-border w3-hover-aqua" onclick="currentDiv(4)"></span>
+      <span class="w3-badge demo w3-border w3-hover-aqua" onclick="currentDiv(5)"></span>
+      <span class="w3-badge demo w3-border w3-hover-aqua" onclick="currentDiv(6)"></span>
+      <span class="w3-badge demo w3-border w3-hover-aqua" onclick="currentDiv(7)"></span>
+      <span class="w3-badge demo w3-border w3-hover-aqua" onclick="currentDiv(8)"></span>
+      <span class="w3-badge demo w3-border w3-hover-aqua" onclick="currentDiv(9)"></span>
+      <span class="w3-badge demo w3-border w3-hover-aqua" onclick="currentDiv(10)"></span>
+    </div>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <h2 class="special">Some Of Our Finest Products</h2>
+<br>
+<!-- <video spellcheck="true" src="" style="height: 500px;margin-left: 325px;" controls autoplay muted loop></video> -->
+  <div class="core6" style= "margin: 15px; background-color:white; size: 10px; display: inline-block; border: 3px solid rgb(48, 188, 123); width: 450px; " >
+      <img src="Images/CPUs/cpu6.png" height="320" alt=" core i3" style="width: 450px;  "  > 
+      <p style="color :rgb(0, 0, 0); text-align: center;"  > AMD ryzen 5 5600 x </p>
+      <h3 style="color :rgb(0, 0, 0); text-align: center; background-color: rgb(48, 188, 123);"> 2500$</h3>
+  </div>
+
+  <div class="mb" style= "margin: 15px; background-color:white; size: 10px; display: inline-block; border: 3px solid rgb(48, 188, 123); width: 450px; " >
+      <img src="Images/Monitors/m2.png" height="320" alt=" core i3" style="width: 450px;  "  > 
+      <p style="color :rgb(0, 0, 0); text-align: center;"  > Razer Raptor 144 hz Gaming Monitor  </p>
+      <h3 style="color :rgb(0, 0, 0); text-align: center; background-color: rgb(48, 188, 123);"> 250$ </h3>
+  </div>
+
+  <div class="kb" style="margin: 15px; background-color:white; size: 10px;
+      display: inline-block; border: 3px solid rgb(48, 188, 123); width:
+      450px; ">
+      <img src="Images/Keyboards/k2.png" height="320" alt=" core i3"
+        style="width: 450px; ">
+      <p style="color :rgb(0, 0, 0); text-align: center;"> Razer balckwidow
+        Gaming Keyboard </p>
+      <h3 style="color :rgb(0, 0, 0); text-align: center; background-color:
+    rgb(48, 188, 123);"> 65$ </h3>
+  </div>
+
+  <div class="mouc" style="margin: 15px; background-color:white; size:
+      10px; display: inline-block; border: 3px solid rgb(48, 188, 123);
+      width: 450px; ">
+      <img src="Images/Mouses/mou3.png" height="290" alt=" core i3"
+        style="width: 400px; margin-top: 150px;">
+      <p style="color :rgb(0, 0, 0); text-align: center;">Logitech K675 RGB
+        Gaming Mouse </p>
+      <h3 style="color :rgb(0, 0, 0); text-align: center; background-color:
+        rgb(48, 188, 123);"> 80$ </h3>
+  </div>
+
+  <div class="mpa" style= "margin: 15px; background-color:white; size: 10px; display: inline-block; border: 3px solid rgb(48, 188, 123); width: 450px; " >
+    <img src="Images/Mobiles/mp1.png" height="440" alt=" core i3" style="width: 450px;  "  > 
+    <p style="color :rgb(0, 0, 0); text-align: center;"  >  iphone 11 pro max 128 GB  </p>
+    <h3 style="color :rgb(0, 0, 0); text-align: center; background-color: rgb(48, 188, 123);"> 1000$ </h3>
+  </div>
+
+  <div class="core5" style= "margin: 15px; background-color:white; size: 10px; display: inline-block; border: 3px solid rgb(48, 188, 123); width: 450px; " >
+    <img src="Images/Laptops/Standard/5.jpg" height="300" alt=" core i3" style="width: 444px;margin-top: 20px; "  > 
+    <p style="color :rgb(0, 0, 0); text-align: center;">LG gram (2022) 16Z90Q Ultra Lightweight Laptop, 16" (2560 x 1600) IPS Display, Intel Evo 12th Gen i7 1260P Processor, 16GB LPDDR5, 256GB NVMe SSD, FHD Webcam, WiFi 6E, Thunderbolt 4, Windows11, Black</p>
+    <h3 style="color :rgb(0, 0, 0); text-align: center; background-color: rgb(48, 188, 123);"> 2315$</h3>
+  </div>
+
+  <div class="core5" style= "margin: 15px; background-color:white; size: 10px; display: inline-block; border: 3px solid rgb(48, 188, 123); width: 450px; " >
+    <img src="Images/Laptops/Gaming/8.jpg" height="350" alt=" core i3" style="width: 444px; "  > 
+    <p style="color :rgb(0, 0, 0); text-align: center;">Acer 15.6" Nitro 5 Gaming Notebook. Sporting a unique gaming-focused aesthetic and components, the Nitro 5 gives you ample power to run a wide range of your favorite titles with ease.</p>
+    <h3 style="color :rgb(0, 0, 0); text-align: center; background-color: rgb(48, 188, 123);"> 1652$</h3>
+  </div>
+
+  <div class="core1" style= "margin: 15px;  background-color: white; size: 10px; display: inline-block;  border: 3px solid rgb(48, 188, 123); width: 450px;">
+    <img src="Images/Memory Storages/Internal/1.jpg" height="330" alt="core i3" style="width: 244px;margin-left: 100px; margin-top: 20px;"  > 
+    <p style="color :rgb(0, 0, 0); text-align: center;">Seagate IronWolf Pro 16TB NAS Internal Hard Drive HDD – CMR 3.5 Inch SATA 6GB/S 7200 RPM 256MB Cache for Raid Network Attached Storage, Data Recovery Rescue Service</p>
+    <h3 style="color :rgb(0, 0, 0); text-align: center;  background-color: rgb(48, 188, 123);"> 269$</h3>
+  </div>
+
+  <div class="core4" style= "margin: 15px; background-color:white; size: 10px; display: inline-block; border: 3px solid rgb(48, 188, 123); width: 450px; " >
+    <img src="Images/Memory Storages/External/4.jpg" height="390" alt=" core i3" style="width: 244px;margin-left: 100px; margin-top:  20px;"  > 
+    <p style="color :rgb(0, 0, 0); text-align: center;">WD 4TB My Passport Portable External Hard Drive with backup software and password protection, Black - WDBPKJ0040BBK-WESN</p>
+    <h3 style="color :rgb(0, 0, 0); text-align: center; background-color: rgb(48, 188, 123);"> 90$</h3>
+  </div>
+
+  <div class="hpa" style= "margin: 15px; background-color:white; size: 10px; display: inline-block; border: 3px solid rgb(48, 188, 123); width: 450px; " >
+      <img src="Images/Headphones/hp1.png" height="430" alt=" core i3" style="width: 450px;  "  > 
+      <p style="color :rgb(0, 0, 0); text-align: center;"  >  Sony x 3000 red color  </p>
+      <h3 style="color :rgb(0, 0, 0); text-align: center; background-color: rgb(48, 188, 123);"> 120$</h3>
+  </div>
+
+  <div class="spc" style= "margin: 15px; background-color:white; size: 10px; display: inline-block; border: 3px solid rgb(48, 188, 123); width: 450px; " >
+    <img src="Images/Speakers/sp3.png" height="430" alt=" core i3" style="width: 450px;  "  > 
+    <p style="color :rgb(0, 0, 0); text-align: center;"  >  Razer Nonmmo Pro Gaming Speaker  </p>
+    <h3 style="color :rgb(0, 0, 0); text-align: center; background-color: rgb(48, 188, 123);"> 250$</h3>              
+  </div>
+
+  <div class="core2" style= "margin: 15px; background-color:white; size: 10px; display: inline-block; border: 3px solid rgb(48, 188, 123); width: 450px; " >
+    <img src="Images/Cooling Fans/Internal/2.jpg" height="375" alt=" core i3" style="width: 344px;margin-left: 50px;"  > 
+    <p style="color :rgb(0, 0, 0); text-align: center;">ARESGAME CPU Air Cooler for Intel/AMD, with 5 Direct Contact Heatpipes and 120mm PWM Fan - Black</p>
+    <h3 style="color :rgb(0, 0, 0); text-align: center; background-color: rgb(48, 188, 123);"> 30$</h3>
+  </div>
+<button onclick="topFunction()" id="To_Top" title="Go to top">Top</button>
+
+  <footer>
+    <form action="action_page.php">
+      <div class="container">
+        <h2>Subscribe to our Newsletter</h2>
+      </div>
+
+      <div class="container" id="Footer_Div">
+        <input type="text" placeholder="Name" name="name" id="Newsletter_Name" required>
+        <input type="text" placeholder="Email address" name="mail" id="Newsletter_Email" required>
+        <label>
+          <input  type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+        </label>
+      </div>
+      
+      <div class="container" id="Have_Subscribed">
+        <a href="login.html"  type="submit">Subscribe</a>
+      </div>
+    </form>
+  </footer>
+
+
+    <script>
+
+    mybutton = document.getElementById("To_Top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onload=function(){scrollFunction()};
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+   
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = x.length
+      }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-white", "");
+      }
+      x[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " w3-white";
+    }
+
+  </script>
+</body>
+
+</html>
